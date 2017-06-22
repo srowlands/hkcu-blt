@@ -1,15 +1,16 @@
 project:
-  machine_name: hkcu-blt
-  prefix: BLT
-  human_name: 'BLTed 8'
+  machine_name: hkcu
+  prefix: HKCU
+  human_name: 'HKCU'
   profile:
     name: lightning
   local:
     protocol: http
     hostname: 'local.${project.machine_name}.com'
 git:
-  default_branch: master
-  remotes: {  }
+  default_branch: develop
+  remotes:
+    - 'cityudev1@svn-5767.devcloud.hosting.acquia.com:cityudev1.git'
 drush:
   aliases:
     remote: '${project.machine_name}.test'
