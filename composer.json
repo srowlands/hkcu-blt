@@ -5,7 +5,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "^8.3"
+        "acquia/blt": "^8.3",
+        "drupal/webform": "5.x-dev"
     },
     "require-dev": {},
     "extra": {

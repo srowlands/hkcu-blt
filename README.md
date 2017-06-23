@@ -1,6 +1,6 @@
-# My Project
+# HKCU
 
-A brief description of My Project.
+This is the HKCU BLT codebase.
 
 ## BLT
 
