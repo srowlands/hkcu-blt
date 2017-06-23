@@ -1,0 +1,19 @@
+uuid: 2a6265c1-c926-420e-ad58-f81377f8abff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_loc
+    - node.type.catering
+id: node.catering.field_loc
+field_name: field_loc
+entity_type: node
+bundle: catering
+label: loc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: f4819d6f-8cfe-45cd-8737-4a76d391d1ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news_articles
+label: 'News Articles'
+type: 'canonical_entities:node'
+pattern: '/news/[node:field_published_date:date:html_month]/[node:title]'
+selection_criteria:
+  87570ae4-477a-4d02-866b-ea510bbe5069:
+    id: node_type
+    bundles:
+      news_article: news_article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 87570ae4-477a-4d02-866b-ea510bbe5069
+selection_logic: and
+weight: -5
+relationships: {  }

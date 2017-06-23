@@ -1,0 +1,11 @@
+uuid: 53796295-1b0c-4957-aed4-f97137096d8c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lBXDpdDPXQtrfTJQhr6MjRJJEEyYSoRJ0acdvHLsWeA
+id: en
+label: ENG
+direction: ltr
+weight: 0
+locked: false

@@ -1,0 +1,36 @@
+uuid: 173e969f-834e-4fe9-9b4c-54b1850ccf6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_rating
+    - node.type.news_article
+    - webform.webform.feedback_form
+  module:
+    - webform
+id: node.news_article.field_content_rating
+field_name: field_content_rating
+entity_type: node
+bundle: news_article
+label: 'Content rating'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: eef5f96c-033b-48f4-be91-53baff41b969
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

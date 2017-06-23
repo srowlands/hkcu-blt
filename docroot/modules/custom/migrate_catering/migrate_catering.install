@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * CityU Migrate install.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function migrate_catering_uninstall() {
+  db_query("DELETE FROM {config} WHERE name LIKE 'migrate.migration.cityu_%'");
+  db_query("DELETE FROM {config} WHERE name = 'migrate_plus.migration_group.content'");
+  drupal_flush_all_caches();
+}

@@ -1,0 +1,18 @@
+uuid: 1a0999f9-a65d-4167-8feb-6d8444408622
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.tweet
+id: media.tweet.revision_log
+field_name: revision_log
+entity_type: media
+bundle: tweet
+label: 'Revision Log'
+description: 'The log entry explaining the changes in this revision.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

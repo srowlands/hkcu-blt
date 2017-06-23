@@ -1,0 +1,7 @@
+system.menu.*.third_party.mdt:
+  type: mapping
+  label: 'Menu customizations'
+  mapping:
+    menu_active_theme:
+      type: text
+      label: 'Menu active theme'

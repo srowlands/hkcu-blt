@@ -1,0 +1,18 @@
+uuid: e390eb81-a40d-4a8f-8744-8c2037ba4d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cityu_departments
+id: taxonomy_term.cityu_departments.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: cityu_departments
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

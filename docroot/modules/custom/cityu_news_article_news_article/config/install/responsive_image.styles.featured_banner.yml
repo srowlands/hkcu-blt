@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.wide_banner
+  theme:
+    - bartik
+id: featured_banner
+label: 'Featured banner'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wide_banner
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wide_banner
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+breakpoint_group: bartik
+fallback_image_style: wide_banner

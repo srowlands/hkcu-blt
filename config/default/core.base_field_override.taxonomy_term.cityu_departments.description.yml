@@ -1,0 +1,20 @@
+uuid: 5f2892df-13de-4039-823f-13a76a787e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cityu_departments
+  module:
+    - text
+id: taxonomy_term.cityu_departments.description
+field_name: description
+entity_type: taxonomy_term
+bundle: cityu_departments
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

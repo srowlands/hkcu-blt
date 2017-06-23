@@ -1,0 +1,56 @@
+id: cityu_catering
+label: 'CityU Catering'
+migration_group: cityu_content
+
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls: http://www.cityu.edu.hk/cityu/visitors/catering/ajax/catering.json
+  # An xpath-like selector corresponding to the items to be imported.
+  #item_selector: position
+  fields:
+    -
+      name: id
+      label: 'Unique identifier'
+      selector: id
+    -
+      name: ename 
+      label: 'Caterer name'
+      selector: ename
+    -
+      name: loc
+      label: 'Location'
+      selector: loc
+    -
+      name: desc
+      label: 'Description'
+      selector: desc
+    -
+      name: food_type
+      label: 'Food type'
+      selector: food_type
+    -
+      name: capacity
+      label: 'Capacity'
+      selector: capacity
+  ids:
+    id:
+      type: string
+
+process:
+  type:
+    plugin: default_value
+    default_value: catering
+  title: ename
+  field_loc: loc
+  field_desc: desc
+  field_food_type: food_type
+  field_capacity: capacity
+
+destination:
+  plugin: 'entity:node'
+
+migration_dependencies: {  }
+
+dependencies: {  }

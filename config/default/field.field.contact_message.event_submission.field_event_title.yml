@@ -1,0 +1,19 @@
+uuid: 233ae990-88bb-4044-840e-f24861b1d1aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.event_submission
+    - field.storage.contact_message.field_event_title
+id: contact_message.event_submission.field_event_title
+field_name: field_event_title
+entity_type: contact_message
+bundle: event_submission
+label: 'Event title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

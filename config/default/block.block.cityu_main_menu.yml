@@ -1,0 +1,27 @@
+uuid: 4e5dd45c-7be5-4a35-9085-d059ffacb2d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - cityu
+id: cityu_main_menu
+theme: cityu
+region: main_menu
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Top nav'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:'
+  suggestion: main_menu
+visibility: {  }

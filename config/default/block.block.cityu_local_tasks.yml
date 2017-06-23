@@ -1,0 +1,22 @@
+uuid: b93c9827-bb7f-45fd-a6fa-e0f438ccf8b6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cityu
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: cityu_local_tasks
+theme: cityu
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

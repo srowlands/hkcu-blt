@@ -1,0 +1,16 @@
+uuid: 0c967d99-45f3-4ec2-8faa-71e5d471a983
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cityu_departments
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.cityu_departments
+target_entity_type_id: taxonomy_term
+target_bundle: cityu_departments
+default_langcode: site_default
+language_alterable: true

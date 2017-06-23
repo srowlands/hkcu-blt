@@ -1,0 +1,42 @@
+uuid: 59fde3f6-ba9b-4d87-8f44-d6dadea6b9d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.staff_bio.field_bio
+    - field.field.paragraph.staff_bio.field_profile_image
+    - field.field.paragraph.staff_bio.field_staff_name
+    - paragraphs.paragraphs_type.staff_bio
+  module:
+    - image
+    - text
+id: paragraph.staff_bio.default
+targetEntityType: paragraph
+bundle: staff_bio
+mode: default
+content:
+  field_bio:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_profile_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_staff_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

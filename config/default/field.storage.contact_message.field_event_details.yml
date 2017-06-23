@@ -1,0 +1,19 @@
+uuid: 4a78c702-91c0-40d0-8113-2484b8213838
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - text
+id: contact_message.field_event_details
+field_name: field_event_details
+entity_type: contact_message
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

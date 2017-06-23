@@ -1,0 +1,5 @@
+services:
+  theme.negotiator.mdt:
+    class: Drupal\mdt\Theme\MdtNegotiator
+    tags:
+      - { name: theme_negotiator, priority: 10 }

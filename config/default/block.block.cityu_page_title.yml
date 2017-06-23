@@ -1,0 +1,20 @@
+uuid: ed4cc3d4-f8ce-490c-acf0-4d1cde53bc6f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cityu
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: cityu_page_title
+theme: cityu
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

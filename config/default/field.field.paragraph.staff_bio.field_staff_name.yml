@@ -1,0 +1,19 @@
+uuid: 8c72d062-2396-4c6f-8a47-ec50aecd5d0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_staff_name
+    - paragraphs.paragraphs_type.staff_bio
+id: paragraph.staff_bio.field_staff_name
+field_name: field_staff_name
+entity_type: paragraph
+bundle: staff_bio
+label: 'Staff Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: eb2c75cc-7c1b-4ce5-9e61-3e1b0bc32b46
+langcode: en
+status: true
+dependencies: {  }
+id: catering_reviewer
+label: 'Catering reviewer'
+weight: 14
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'delete any catering content'
+  - 'edit any catering content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_archived transition'
+  - 'use published_published transition'
+  - 'view moderation states'

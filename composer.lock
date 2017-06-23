@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "96620708a4a4b65b3377f6273e4121be",
-    "content-hash": "9a34b4b395592ecf06b732d534498a9f",
+    "hash": "436b6c483733c9e80816c69acf0c0e0f",
+    "content-hash": "e7f73ed35d5dc640e2919c5a8c5b8231",
     "packages": [
         {
             "name": "acquia/blt",
@@ -1528,6 +1528,211 @@
             }
         },
         {
+            "name": "drupal/admin_toolbar",
+            "version": "1.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/admin_toolbar",
+                "reference": "8.x-1.19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "87de41eab3c5cd49d4e1b5b764cb3b9d5ad683a0"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.19",
+                    "datestamp": "1491487683"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Anis Taktak",
+                    "homepage": "https://www.drupal.org/u/matio89"
+                },
+                {
+                    "name": "eme",
+                    "homepage": "https://www.drupal.org/user/542492"
+                },
+                {
+                    "name": "fethi.krout",
+                    "homepage": "https://www.drupal.org/user/3206765"
+                },
+                {
+                    "name": "matio89",
+                    "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "romainj",
+                    "homepage": "https://www.drupal.org/user/370706"
+                }
+            ],
+            "description": "Admin Toolbar improve the default Drupal Toolbar, it lets the hover of sub menus.",
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "support": {
+                "source": "http://cgit.drupalcode.org/admin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/adminimal_admin_toolbar",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/adminimal_admin_toolbar",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/adminimal_admin_toolbar-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "8f332858853d3c47406b44e891e62d8c7cb11361"
+            },
+            "require": {
+                "drupal/admin_toolbar": "*",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1493885887"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ted Slesinski",
+                    "homepage": "https://www.drupal.org/u/energee"
+                }
+            ],
+            "description": "Adminimal styling brought to admin toolbar.",
+            "homepage": "https://www.drupal.org/project/adminimal_admin_toolbar",
+            "support": {
+                "source": "http://cgit.drupalcode.org/adminimal_admin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/adminimal_admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/adminimal_theme",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/adminimal_theme",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.3.zip",
+                "reference": null,
+                "shasum": "bb9f280bcdbd7e4d384a925c685a2aa1feed8419"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1480507083"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ANDiTKO",
+                    "homepage": "https://www.drupal.org/user/1428124"
+                },
+                {
+                    "name": "realityloop",
+                    "homepage": "https://www.drupal.org/user/139189"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/adminimal_theme",
+            "support": {
+                "source": "http://cgit.drupalcode.org/adminimal_theme"
+            }
+        },
+        {
+            "name": "drupal/bootstrap",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap",
+                "reference": "8.x-3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.5.zip",
+                "reference": null,
+                "shasum": "569f8a243ad6a2e04a86123a0b2a594783a09860"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.5",
+                    "datestamp": "1495040301"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "markcarver",
+                    "homepage": "https://www.drupal.org/user/501638"
+                },
+                {
+                    "name": "neardark",
+                    "homepage": "https://www.drupal.org/user/661076"
+                },
+                {
+                    "name": "sylus",
+                    "homepage": "https://www.drupal.org/user/339714"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/bootstrap",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap"
+            }
+        },
+        {
             "name": "drupal/coder",
             "version": "8.2.12",
             "source": {
@@ -1625,6 +1830,52 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/cog"
             }
+        },
+        {
+            "name": "drupal/conditional_fields",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/conditional_fields",
+                "reference": "8060870cda4c7ee058a3186043d471e3a509100f"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1+2-dev",
+                    "datestamp": "1496849642"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Adyax",
+                    "homepage": "https://www.adyax.com/"
+                },
+                {
+                    "name": "itsekhmistro",
+                    "homepage": "https://www.drupal.org/user/928152"
+                },
+                {
+                    "name": "peterpoe",
+                    "homepage": "https://www.drupal.org/user/55674"
+                }
+            ],
+            "description": "Conditional fields",
+            "homepage": "https://www.drupal.org/project/conditional_fields",
+            "support": {
+                "source": "http://cgit.drupalcode.org/conditional_fields"
+            },
+            "time": "2017-06-22 15:19:49"
         },
         {
             "name": "drupal/config_filter",
@@ -2064,6 +2315,61 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2017-06-21 18:13:27"
+        },
+        {
+            "name": "drupal/crop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/crop",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "0ad542254940c844f8a22c1b386131f06c665b4f"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/media_entity": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1491032884"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "woprrr",
+                    "homepage": "https://www.drupal.org/user/858604"
+                }
+            ],
+            "description": "Provides storage and API for image crops.",
+            "homepage": "https://www.drupal.org/project/crop",
+            "support": {
+                "source": "http://cgit.drupalcode.org/crop",
+                "issues": "https://www.drupal.org/project/issues/crop"
+            }
         },
         {
             "name": "drupal/ctools",
@@ -2711,6 +3017,60 @@
             }
         },
         {
+            "name": "drupal/entity_reference_revisions",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_reference_revisions",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "78aebb58efbbfcbb2faa40a1afc0830312b32631"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/diff": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1495814284"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Adds a Entity Reference field type with revision support.",
+            "homepage": "https://www.drupal.org/project/entity_reference_revisions",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_reference_revisions"
+            }
+        },
+        {
             "name": "drupal/features",
             "version": "3.5.0",
             "source": {
@@ -2777,6 +3137,94 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/features"
             }
+        },
+        {
+            "name": "drupal/field_redirection",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_redirection",
+                "reference": "6bdcc6dbb9447c81f1ffa42c9aa51408c7af597e"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1456167239"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "ultimike",
+                    "homepage": "https://www.drupal.org/user/51132"
+                }
+            ],
+            "description": "Provides a field formatter to redirect the page to a URL. Requires Link module.",
+            "homepage": "https://www.drupal.org/project/field_redirection",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/field_redirection",
+                "issues": "http://drupal.org/project/issues/field_redirection"
+            },
+            "time": "2016-02-22 18:51:43"
+        },
+        {
+            "name": "drupal/focal_point",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/focal_point",
+                "reference": "920b68efe28d19392c2e9a4fee8d9aacdd77270e"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/crop": "^1.0.0-alpha2"
+            },
+            "require-dev": {
+                "drupal/crop": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta4+14-dev",
+                    "datestamp": "1496333042"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bleen",
+                    "homepage": "https://www.drupal.org/user/77375"
+                }
+            ],
+            "description": "Allows users to specify the focal point of an image for use during cropping.",
+            "homepage": "https://www.drupal.org/project/focal_point",
+            "support": {
+                "source": "http://cgit.drupalcode.org/focal_point"
+            },
+            "time": "2017-06-08 14:33:24"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -3217,6 +3665,103 @@
             "time": "2017-06-16 08:30:39"
         },
         {
+            "name": "drupal/menu_block",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/menu_block",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "fd8d559452a9e1e07de6fefd9955df6feadc943a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1473063239"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "kim.pepper",
+                    "homepage": "https://www.drupal.org/user/370574"
+                },
+                {
+                    "name": "rrrob",
+                    "homepage": "https://www.drupal.org/user/273533"
+                }
+            ],
+            "description": "Provides configurable blocks of menu links.",
+            "homepage": "https://www.drupal.org/project/menu_block",
+            "support": {
+                "source": "http://cgit.drupalcode.org/menu_block"
+            }
+        },
+        {
+            "name": "drupal/menu_link_attributes",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/menu_link_attributes",
+                "reference": "e66a7fa030d51e773a739bb2bd0dc340d988fa22"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta3+2-dev",
+                    "datestamp": "1471698539"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "yannickoo",
+                    "homepage": "https://www.drupal.org/user/531118"
+                }
+            ],
+            "description": "Allows you to add attributes to menu links.",
+            "homepage": "http://drupal.org/project/menu_link_attributes",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/menu_link_attributes",
+                "issues": "http://drupal.org/project/issues/menu_link_attributes"
+            },
+            "time": "2016-08-20 13:05:19"
+        },
+        {
             "name": "drupal/metatag",
             "version": "1.1.0",
             "source": {
@@ -3272,6 +3817,104 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/metatag",
                 "issues": "http://drupal.org/project/issues/metatag"
+            }
+        },
+        {
+            "name": "drupal/migrate_plus",
+            "version": "2.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate_plus",
+                "reference": "8.x-2.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-2.0-beta2.zip",
+                "reference": "8.x-2.0-beta2",
+                "shasum": "0b29113a3c00c7ab3ba73e811da3450edca4c0bb"
+            },
+            "require": {
+                "drupal/core": "^8.1"
+            },
+            "require-dev": {
+                "drupal/migrate_example_advanced_setup": "*",
+                "drupal/migrate_example_setup": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta2",
+                    "datestamp": "1476307439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Ryan",
+                    "homepage": "https://www.drupal.org/u/mikeryan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Enhancements to core migration support.",
+            "homepage": "https://www.drupal.org/project/migrate_plus",
+            "support": {
+                "source": "https://cgit.drupalcode.org/migrate_plus",
+                "issues": "https://www.drupal.org/project/issues/migrate_plus",
+                "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
+            "name": "drupal/migrate_tools",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate_tools",
+                "reference": "8.x-2.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "bf823a9d08d08b99d5ea1469729b30f9969ef519"
+            },
+            "require": {
+                "drupal/core": "^8.1",
+                "drupal/migrate_plus": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1476313439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Tools to assist in developing and running migrations.",
+            "homepage": "https://www.drupal.org/project/migrate_tools",
+            "support": {
+                "source": "http://cgit.drupalcode.org/migrate_tools"
             }
         },
         {
@@ -3558,6 +4201,74 @@
             }
         },
         {
+            "name": "drupal/paragraphs",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paragraphs",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "c678e5704a98c6a0549e415412da081cfeb03a00"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/entity_reference_revisions": "*"
+            },
+            "require-dev": {
+                "drupal/diff": "*",
+                "drupal/field_group": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/replicate": "*",
+                "drupal/search_api": "*",
+                "drupal/search_api_db": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1487331784"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Enables the creation of paragraphs entities.",
+            "homepage": "https://www.drupal.org/project/paragraphs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs"
+            }
+        },
+        {
             "name": "drupal/pathauto",
             "version": "1.0.0",
             "source": {
@@ -3655,6 +4366,61 @@
             "homepage": "https://www.drupal.org/project/qa_accounts",
             "support": {
                 "source": "http://cgit.drupalcode.org/qa_accounts"
+            }
+        },
+        {
+            "name": "drupal/restui",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/restui",
+                "reference": "8.x-1.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/restui-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "c3a9acd9355c1ee1690cbc8a1458f960f8c25c36"
+            },
+            "require": {
+                "drupal/core": "^8.2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.15",
+                    "datestamp": "1496919842"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "-enzo-",
+                    "homepage": "https://www.drupal.org/user/294937"
+                },
+                {
+                    "name": "clemens.tolboom",
+                    "homepage": "https://www.drupal.org/user/125814"
+                },
+                {
+                    "name": "juampynr",
+                    "homepage": "https://www.drupal.org/user/682736"
+                },
+                {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                }
+            ],
+            "description": "Provides a user interface to manage REST resources",
+            "homepage": "https://www.drupal.org/project/restui",
+            "support": {
+                "source": "http://cgit.drupalcode.org/restui"
             }
         },
         {
@@ -4159,6 +4925,60 @@
                 "issues": "https://drupal.org/project/issues/webform"
             },
             "time": "2017-06-22 20:21:50"
+        },
+        {
+            "name": "drupal/workbench_access",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/workbench_access",
+                "reference": "df9661e1832aa98c1de8ac8141d833255d4d3bd6"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4+1-dev",
+                    "datestamp": "1493402286"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "agentrickard",
+                    "homepage": "https://www.drupal.org/user/20975"
+                },
+                {
+                    "name": "becw",
+                    "homepage": "https://www.drupal.org/user/81067"
+                },
+                {
+                    "name": "robeano",
+                    "homepage": "https://www.drupal.org/user/67660"
+                },
+                {
+                    "name": "stevector",
+                    "homepage": "https://www.drupal.org/user/179805"
+                }
+            ],
+            "description": "Hierarchical access control for content.",
+            "homepage": "https://www.drupal.org/project/workbench_access",
+            "support": {
+                "source": "http://cgit.drupalcode.org/workbench_access"
+            },
+            "time": "2017-05-30 16:06:29"
         },
         {
             "name": "drupal/workbench_moderation",
@@ -9702,6 +10522,12 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/webform": 20,
+        "drupal/conditional_fields": 20,
+        "drupal/devel": 20,
+        "drupal/field_redirection": 20,
+        "drupal/focal_point": 20,
+        "drupal/menu_link_attributes": 20,
+        "drupal/workbench_access": 20,
         "drupal/memcache": 20
     },
     "prefer-stable": true,

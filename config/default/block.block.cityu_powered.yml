@@ -1,0 +1,22 @@
+uuid: 9a402464-00da-4f1a-8464-2ddaeb7fc7f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cityu
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: cityu_powered
+theme: cityu
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

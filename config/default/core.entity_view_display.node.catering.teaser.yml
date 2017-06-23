@@ -1,0 +1,26 @@
+uuid: 4de4d2af-33f9-40af-b8a8-982bd7434e42
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.catering.field_id
+    - field.field.node.catering.field_loc
+    - node.type.catering
+  module:
+    - user
+id: node.catering.teaser
+targetEntityType: node
+bundle: catering
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_capacity: true
+  field_desc: true
+  field_food_type: true
+  field_id: true
+  field_loc: true
+  langcode: true

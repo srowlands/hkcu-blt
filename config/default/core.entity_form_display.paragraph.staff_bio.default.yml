@@ -1,0 +1,50 @@
+uuid: fd7d3426-1986-4af1-a751-a2e6df387201
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.staff_bio.field_bio
+    - field.field.paragraph.staff_bio.field_profile_image
+    - field.field.paragraph.staff_bio.field_staff_name
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.staff_bio
+  module:
+    - image
+    - text
+    - workbench_moderation
+id: paragraph.staff_bio.default
+targetEntityType: paragraph
+bundle: staff_bio
+mode: default
+content:
+  field_bio:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_profile_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_staff_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
