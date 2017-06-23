@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wide_banner
+label: 'Wide banner'
+effects:
+  6f205963-4223-4e3f-8098-be2abd2f1ca8:
+    uuid: 6f205963-4223-4e3f-8098-be2abd2f1ca8
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 1600
+      height: 400

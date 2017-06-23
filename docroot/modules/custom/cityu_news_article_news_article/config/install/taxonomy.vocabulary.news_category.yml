@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'News category'
+vid: news_category
+description: 'Categories of news articles'
+hierarchy: 0
+weight: 0

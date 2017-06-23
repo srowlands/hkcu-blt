@@ -1,0 +1,111 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_article.body
+    - field.field.node.news_article.field_external_news_source
+    - field.field.node.news_article.field_feature_image
+    - field.field.node.news_article.field_news_category
+    - field.field.node.news_article.field_primary_featured_article
+    - field.field.node.news_article.field_published_date
+    - field.field.node.news_article.field_related_stories
+    - field.field.node.news_article.field_secondary_featured_article
+    - field.field.node.news_article.field_staff_bio
+    - node.type.news_article
+    - responsive_image.styles.featured_banner
+  module:
+    - datetime
+    - entity_reference_revisions
+    - link
+    - panelizer
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.news_article.default
+targetEntityType: node
+bundle: news_article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_external_news_source:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_feature_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: featured_banner
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_news_category:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_published_date:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_related_stories:
+    weight: 6
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_staff_bio:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_primary_featured_article: true
+  field_secondary_featured_article: true
+  langcode: true

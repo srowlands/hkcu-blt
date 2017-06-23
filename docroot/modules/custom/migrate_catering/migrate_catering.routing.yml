@@ -1,0 +1,7 @@
+migrate_catering.content:
+  path: '/migrate-example'
+  defaults:
+    _controller: '\Drupal\migrate_catering\Controller\HelloController::content'
+    _title: 'Hello Drupal!'
+  requirements:
+    _permission: 'access content'

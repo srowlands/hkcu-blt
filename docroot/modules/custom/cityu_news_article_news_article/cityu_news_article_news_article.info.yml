@@ -1,0 +1,29 @@
+name: 'News article'
+description: 'Provides News article content type and related configuration. A news article containing a news story'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - content_translation
+  - ctools
+  - datetime
+  - entity_browser
+  - entity_reference_revisions
+  - field
+  - file
+  - focal_point
+  - image
+  - language
+  - link
+  - menu_ui
+  - node
+  - panelizer
+  - paragraphs
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+  - workbench_moderation
+package: 'CityU News Article'

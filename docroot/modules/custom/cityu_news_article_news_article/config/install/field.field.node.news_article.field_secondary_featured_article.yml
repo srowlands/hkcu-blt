@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secondary_featured_article
+    - node.type.news_article
+id: node.news_article.field_secondary_featured_article
+field_name: field_secondary_featured_article
+entity_type: node
+bundle: news_article
+label: 'Secondary featured article'
+description: 'If checked this article will appear as a secondary feature on the news centre homepage'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

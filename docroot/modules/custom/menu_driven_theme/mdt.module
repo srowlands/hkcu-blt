@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Main file for the Menu Driven Theme module.
+ *
+ * @ingroup cityu
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\system\Entity\Menu;
+
+/**
+ * Implements hook_form_alter().
+ */
+function mdt_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id === 'menu_add_form' || $form_id === 'menu_edit_form') {
+    mdt_alter_menu_forms($form, $form_state, $form_id);
+  }
+}
+
+/**
+ * Handles the form alter for the menu_add_form and menu_edit_form forms.
+ */
+function mdt_alter_menu_forms(&$form, FormStateInterface $form_state, $form_id) {
+
+  $options = ['default' => t('Default theme')];
+  $themes = \Drupal::service('theme_handler')->listInfo();
+  foreach ($themes as $key => $theme) {
+    $options[$key] = $theme->info['name'];
+  }
+
+  $menu = $form_state->getFormObject()->getEntity();
+  if (NULL !== $menu->getThirdPartySetting('mdt', 'menu_active_theme')) {
+    $default_value = $menu->getThirdPartySetting('mdt', 'menu_active_theme');
+  }
+  else {
+    $default_value = 'default';
+  }
+
+  $form['menu_active_theme'] = [
+    '#type' => 'select',
+    '#title' => t('Active theme'),
+    '#description' => t('Select which theme should be active when a menu item in this menu is active.'),
+    '#options' => $options,
+    '#default_value' => $default_value,
+    '#weight' => 1,
+  ];
+
+  if (isset($form['links'])) {
+    $form['links']['#weight'] = 2;
+  }
+
+  $form['#entity_builders'][] = 'mdt_form_menu_add_form_builder';
+}
+
+/**
+ * Entity builder for the menu configuration entity.
+ */
+function mdt_form_menu_add_form_builder($entity_type, Menu $menu, &$form, FormStateInterface $form_state) {
+  if ($form_state->getValue('menu_active_theme')) {
+    if ($form_state->getValue('menu_active_theme') == 'default') {
+      $menu->unsetThirdPartySetting('mdt', 'menu_active_theme');
+    }
+    else {
+      $menu->setThirdPartySetting('mdt', 'menu_active_theme', $form_state->getValue('menu_active_theme'));
+    }
+    return;
+  }
+}

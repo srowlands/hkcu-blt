@@ -1,0 +1,8 @@
+type: module
+name: Migrate Catering Example
+description: 'Example of a migration class to import from a JSON feed.'
+package: Examples
+core: 8.x
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
