@@ -1,0 +1,27 @@
+uuid: 7fb9ae53-e4ca-443a-addc-778d325d51ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_stories
+    - node.type.news_article
+id: node.news_article.field_related_stories
+field_name: field_related_stories
+entity_type: node
+bundle: news_article
+label: 'Related stories'
+description: 'Optionally reference any other stories that are related'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news_article: news_article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

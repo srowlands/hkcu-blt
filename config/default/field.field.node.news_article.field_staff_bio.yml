@@ -1,0 +1,30 @@
+uuid: b757cab5-38d5-4039-9b33-5b54d9f0c521
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_bio
+    - node.type.news_article
+    - paragraphs.paragraphs_type.staff_bio
+  module:
+    - entity_reference_revisions
+id: node.news_article.field_staff_bio
+field_name: field_staff_bio
+entity_type: node
+bundle: news_article
+label: 'Staff Bio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      staff_bio: staff_bio
+    target_bundles_drag_drop:
+      staff_bio:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

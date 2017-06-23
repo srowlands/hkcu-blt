@@ -1,0 +1,17 @@
+uuid: c314acb4-1a8b-4479-99ab-6fe65c492fda
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_catering
+_core:
+  default_config_hash: wXmkwgJAtPPhXkUcJ1IhJBluzGSB5-o2RFdKgX6G2Kg
+id: cityu_content
+label: 'CityU content imports'
+description: 'Import CityU content.'
+source_type: 'JSON feed'
+module: null
+shared_configuration:
+  source:
+    key: default

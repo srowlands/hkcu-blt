@@ -1,0 +1,14 @@
+uuid: 644163da-c391-4bf6-8d6f-2f7e9aecf050
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.catering_creator
+  module:
+    - user
+id: user_remove_role_action.catering_creator
+label: 'Remove the Catering creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: catering_creator

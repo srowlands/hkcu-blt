@@ -1,0 +1,21 @@
+uuid: a72975fb-9e60-45da-9e6e-7d554f0a0bdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_overlay
+    - paragraphs.paragraphs_type.carousel_item
+  module:
+    - text
+id: paragraph.carousel_item.field_carousel_overlay
+field_name: field_carousel_overlay
+entity_type: paragraph
+bundle: carousel_item
+label: 'Carousel overlay'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

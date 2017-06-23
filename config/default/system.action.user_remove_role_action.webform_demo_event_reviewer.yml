@@ -1,0 +1,14 @@
+uuid: 357c6321-a854-450c-b27a-4f6969be5bb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webform_demo_event_reviewer
+  module:
+    - user
+id: user_remove_role_action.webform_demo_event_reviewer
+label: 'Remove the Demo: Event reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webform_demo_event_reviewer

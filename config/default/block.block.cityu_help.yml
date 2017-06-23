@@ -1,0 +1,22 @@
+uuid: 228fa474-f90e-4ed1-8dc0-6a4a40fa837b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cityu
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: cityu_help
+theme: cityu
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

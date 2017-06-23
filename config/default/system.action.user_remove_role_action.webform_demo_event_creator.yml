@@ -1,0 +1,14 @@
+uuid: 2e2ff09f-0283-4c84-9e44-fbb0b3980821
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webform_demo_event_creator
+  module:
+    - user
+id: user_remove_role_action.webform_demo_event_creator
+label: 'Remove the Demo: Event creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webform_demo_event_creator

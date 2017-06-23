@@ -1,0 +1,8 @@
+uuid: cd1c1f00-25b3-4c68-a3e8-ff507288c351
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_feature
+label: 'Carousel feature'
+revision: 1
+description: 'Allows blocks containing carousel items'

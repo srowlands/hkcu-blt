@@ -1,0 +1,27 @@
+uuid: e2b3f86d-2f88-46a0-9813-b71e3d2d3ebe
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-links
+  module:
+    - menu_block
+  theme:
+    - cityu
+id: menulinks
+theme: cityu
+region: navigation
+weight: -5
+provider: null
+plugin: 'menu_block:menu-links'
+settings:
+  id: 'menu_block:menu-links'
+  label: 'Menu links'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'menu-links:'
+  suggestion: menu_links
+visibility: {  }

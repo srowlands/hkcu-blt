@@ -1,0 +1,64 @@
+uuid: 99ffb0de-8fdf-476a-8bff-0cd9be040886
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.catering.field_capacity
+    - field.field.node.catering.field_desc
+    - field.field.node.catering.field_food_type
+    - field.field.node.catering.field_id
+    - field.field.node.catering.field_loc
+    - node.type.catering
+  module:
+    - user
+id: node.catering.default
+targetEntityType: node
+bundle: catering
+mode: default
+content:
+  field_capacity:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_desc:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_food_type:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_id:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_loc:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

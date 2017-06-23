@@ -1,0 +1,22 @@
+uuid: 4b9491d3-dba9-41c7-bd35-7b1676d2cb09
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cityu
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: cityu_content
+theme: cityu
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

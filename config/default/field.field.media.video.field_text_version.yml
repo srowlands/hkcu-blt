@@ -1,0 +1,21 @@
+uuid: 78f9b60a-58d9-4f4b-9ee2-60100f8de1cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_text_version
+    - media_entity.bundle.video
+  module:
+    - text
+id: media.video.field_text_version
+field_name: field_text_version
+entity_type: media
+bundle: video
+label: 'Text version'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

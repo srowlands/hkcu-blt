@@ -1,0 +1,11 @@
+uuid: 8e5493f6-ff1c-4136-aee6-ff269ba25f20
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.catering
+id: node.catering
+target_entity_type_id: node
+target_bundle: catering
+default_langcode: site_default
+language_alterable: false

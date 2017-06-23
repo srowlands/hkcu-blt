@@ -1,0 +1,14 @@
+uuid: 1c1ed708-6275-4371-baa3-8d093b147c6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.catering_reviewer
+  module:
+    - user
+id: user_remove_role_action.catering_reviewer
+label: 'Remove the Catering reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: catering_reviewer

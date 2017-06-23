@@ -1,0 +1,8 @@
+uuid: 03151d9c-fed8-4cee-aa22-315bc25514b3
+langcode: en
+status: true
+dependencies: {  }
+id: menu-links
+label: 'Menu links'
+description: 'Provides quick links in the header'
+locked: false

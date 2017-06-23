@@ -1,0 +1,71 @@
+uuid: 721a9f18-496e-4a80-a5a5-7607e79eb453
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.event_submission
+    - field.field.contact_message.event_submission.field_event_details
+    - field.field.contact_message.event_submission.field_event_title
+    - field.field.contact_message.event_submission.field_your_email
+  module:
+    - text
+id: contact_message.event_submission.default
+targetEntityType: contact_message
+bundle: event_submission
+mode: default
+content:
+  field_event_details:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_title:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_your_email:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  mail:
+    weight: -2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    weight: -3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  subject:
+    weight: -1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true

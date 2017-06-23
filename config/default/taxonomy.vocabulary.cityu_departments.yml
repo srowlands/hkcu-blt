@@ -1,0 +1,9 @@
+uuid: d8f1b818-04bb-4c8f-9f14-687074adb1f2
+langcode: en
+status: true
+dependencies: {  }
+name: 'CityU Departments'
+vid: cityu_departments
+description: 'List of CityU Departments'
+hierarchy: 1
+weight: 0

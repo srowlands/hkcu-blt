@@ -1,0 +1,20 @@
+uuid: 5694fc3c-814c-437e-aab6-d836379ee595
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cityu_departments
+  module:
+    - path
+id: taxonomy_term.cityu_departments.path
+field_name: path
+entity_type: taxonomy_term
+bundle: cityu_departments
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

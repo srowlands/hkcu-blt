@@ -1,0 +1,16 @@
+uuid: 1e1214d0-c770-4aa4-8313-c0f597a7cae1
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_image_1920x1080
+label: 'Hero image (1920x1080)'
+effects:
+  ed9d4d42-79ba-49e9-8e08-250d9512a34f:
+    uuid: ed9d4d42-79ba-49e9-8e08-250d9512a34f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 1080

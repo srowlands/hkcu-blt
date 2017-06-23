@@ -1,0 +1,19 @@
+uuid: ce53279a-9b7e-45b3-886d-42141a6334ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_department_code
+    - taxonomy.vocabulary.cityu_departments
+id: taxonomy_term.cityu_departments.field_department_code
+field_name: field_department_code
+entity_type: taxonomy_term
+bundle: cityu_departments
+label: 'Department Code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

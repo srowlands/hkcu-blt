@@ -1,0 +1,14 @@
+uuid: 2cb40583-fcf3-473c-b23d-8accba91a90d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webform_demo_event_creator
+  module:
+    - user
+id: user_add_role_action.webform_demo_event_creator
+label: 'Add the Demo: Event creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: webform_demo_event_creator

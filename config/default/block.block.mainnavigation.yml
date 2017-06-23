@@ -1,0 +1,36 @@
+uuid: 0953597e-3cb8-4e93-a178-7625ea734451
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - ctools
+    - menu_block
+  theme:
+    - bartik
+id: mainnavigation
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Media
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'main:'
+  suggestion: main
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+      news_article: news_article
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

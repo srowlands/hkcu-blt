@@ -1,0 +1,34 @@
+uuid: 31b0d29f-b423-41c4-87e0-89a156c36578
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_item.field_carousel_background
+    - field.field.paragraph.carousel_item.field_carousel_overlay
+    - image.style.large
+    - paragraphs.paragraphs_type.carousel_item
+  module:
+    - image
+    - text
+id: paragraph.carousel_item.default
+targetEntityType: paragraph
+bundle: carousel_item
+mode: default
+content:
+  field_carousel_background:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_carousel_overlay:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

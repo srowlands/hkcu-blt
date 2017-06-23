@@ -1,0 +1,19 @@
+uuid: 97ba67eb-e846-480b-921b-3ae92477cc63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_food_type
+    - node.type.catering
+id: node.catering.field_food_type
+field_name: field_food_type
+entity_type: node
+bundle: catering
+label: 'food type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
